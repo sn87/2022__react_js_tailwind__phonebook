@@ -12,7 +12,7 @@ const App = () => {
   ]);
   const [filter, setFilter] = useState('')
 
-  // Create a person object and save it to state
+  // create a person object and save it to state
   const createPerson = (name, number) => {
     const personObject = {
       name: name,
@@ -20,7 +20,7 @@ const App = () => {
       id: persons.length+1
     }
 
-    // check if the person with that numbr exists already
+    // check if the person with that number exists already
     let personExists = false;
     persons.forEach(person => {
       if (person.name === personObject.name && person.number === personObject.number) personExists = true;
@@ -56,4 +56,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
