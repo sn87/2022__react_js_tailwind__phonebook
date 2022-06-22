@@ -29,7 +29,6 @@ const App = () => {
     personExists 
       ? alert(`${name} is already added to phonebook`)
       : setPersons(persons.concat(personObject));    
-    
   }
 
   // filter function: set input to state object
